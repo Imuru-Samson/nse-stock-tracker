@@ -1,0 +1,14 @@
+{
+  "name": "coretheme",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "tailwindcss": "^3.3.2",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21"
+  },
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./static/css/output.css --minify",
+    "start": "tailwindcss -i ./src/input.css -o ./static/css/output.css --watch"
+  }
+}

@@ -1,0 +1,648 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="ctl00_Head1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><title>
+	stockskenya.com :: information and analysis on kenya's stock market, the Nairobi Stock Exchange (NSE)
+</title><link href="css/stockskenya.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/bubble-tooltip.js"></script>
+    <link rel="stylesheet" href="css/bubble-tooltip.css" media="screen"><link href="css/invest.css" rel="stylesheet" type="text/css"><meta name="Keywords" content="nairobi stock exchange,stocks,stock exchange,NSE,kenya stocks,stocks kenya,stockskenya,kenya bourse,kenya,investment,east africa,east african,nairobi shares,kenyan shares,kenya shares,stock analysis,stock brokers,markets,business,NSE index,financial reports,business news,market news,DPS,EPS,Dividend Yield,P/E,Price Earnings Ratio,losers,gainers,movers,shares traded,investor,announcements"><meta name="Description" content="News, information and analysis tools for Kenyan stocks trading in the Nairobi Stock Exchange(NSE). Analyse performance of stocks from 1996 to now.">
+    <script language="javascript" type="text/javascript">
+function Button1_onclick() {
+    window.location.replace("/" + document.getElementById("src").value);
+    //document.aspnetForm.method="post";
+    //document.aspnetForm.submit();
+        }
+function checkEnter(e)
+    { //e is event object passed from function invocation
+    var characterCode //literal character code will be stored in this variable
+    if(e && e.which){ //if which property of event object is supported (NN4)
+    e = e
+    characterCode = e.which //character code is contained in NN4's which property
+    }
+    else{
+    e = event
+    characterCode = e.keyCode //character code is contained in IE's keyCode property
+    }
+    if(characterCode == 13){ //if generated character code is equal to ascii 13 (if enter key)
+        window.location.replace("/" + document.getElementById("src").value);
+        return true;
+    }
+    else{
+    return false;
+    }
+}
+</script>
+    <script type="text/JavaScript">
+    function showlaptop(theTable)
+    {
+	     if (document.getElementById(theTable).style.display == 'none')
+	     {
+		      document.getElementById(theTable).style.display = 'block';
+	     }
+    }
+    function hidelaptop(theTable)
+    {
+	     if (document.getElementById(theTable).style.display == 'none')
+	     {
+		      document.getElementById(theTable).style.display = 'none';
+	     }
+	     else
+	     {
+		      document.getElementById(theTable).style.display = 'none';
+	     }
+    }
+    function setOverColor(theElement)
+    {
+	    document.getElementById(theElement).style.backgroundColor='#003300';
+    }
+    function setOutColor(theElement)
+    {
+	    document.getElementById(theElement).style.backgroundColor='';
+    }
+    function openwin(strPath){
+      window.open(strPath, "SKPop" , "toolbar=0,location=0,directories=0,status=1,menubar=0,scrollbars=1,resizable=0,width=550,height=500");
+    }    
+    </script>
+        <style type="text/css">
+      #dropmenudiv{
+      position:absolute;
+      border:1px solid #006600;
+      border-bottom-width: 0;
+      font:normal 12px Verdana;
+      line-height:18px;
+      vertical-align: middle;
+      z-index:100;
+      }
+      #dropmenudiv a{
+      width: 100%;
+      display: block;
+      text-indent: 3px;
+      border-bottom: 1px solid #006600;
+      padding: 3px 0;
+      text-decoration: none;
+      vertical-align: middle;
+      font-weight: bold;
+      }
+      #dropmenudiv a:hover{ /*hover background color*/
+      background-color: #333333;
+      }
+    </style>
+    <script type="text/javascript">
+    /***********************************************
+    * AnyLink Drop Down Menu- © Dynamic Drive (www.dynamicdrive.com)
+    * This notice MUST stay intact for legal use
+    * Visit http://www.dynamicdrive.com/ for full source code
+    ***********************************************/
+    //Contents for menu 1
+    var menu1=new Array()
+    menu1[0]='<a href="stockprofiler_cat_lts.html" class="whitelinks">Latest Prices</a>'
+    menu1[1]='<a href="stkfundamentals.html" class="whitelinks">Stocks Summary</a>'
+    menu1[2]='<a href="stkperformance.html" class="whitelinks">Performance Calculator</a>'
+    menu1[3]='<a href="stkcompanydates.html" class="whitelinks">Company Financial Dates</a>'
+    menu1[4]='<a href="stkannouncements.html" class="whitelinks">Announcements</a>'
+    menu1[5]='<a href="stkfinancialreports.html" class="whitelinks">Financial Reports</a>'
+    menu1[6]='<a href="stknseindex.html" class="whitelinks">NSE Index</a>'
+    menu1[7]='<a href="stknseindex_ind_use.html" class="whitelinks">USE ALSI</a>'
+    menu1[8]='<a href="stkfinancialindicators.html" class="whitelinks">Key Financial Indicators</a>'
+    menu1[9]='<a href="stkcurrencies.html" class="whitelinks">Analyze Currencies</a>'
+	
+      //Contents for menu 2, and so on
+      var menu2=new Array()
+      menu2[0]='<a href="stkForums_clm_14.html" class="whitelinks">Discussion Forum</a>'
+      menu2[1]='<a href="premiumservices.html" class="whitelinks">My Watch List</a>'
+      menu2[2]='<a href="stkfantasyNSE.html" class="whitelinks">Fantasy Stock Market</a>'
+      menu2[3]='<a href="stkdispcontent_clm_23.html" class="whitelinks">Our Partners</a>'
+      menu2[4]='<a href="stkdispcontent_clm_26.html" class="whitelinks">Links</a>'
+      menu2[5]='<a href="stkprovidedata.html" class="whitelinks">For Your Website/ Blog</a>'
+    var menu3=new Array()
+      menu3[0]='<a href="stkdispcontent_clm_1.html" class="whitelinks">News</a>'
+      menu3[1]='<a href="stkdispcontent_clm_6.html" class="whitelinks">NSE Stock Brokers</a>'
+      menu3[2]='<a href="stkdispcontent_clm_7.html" class="whitelinks">NSE Stock Agents</a>'
+      menu3[3]='<a href="stkdispcontent_clm_2.html" class="whitelinks">Featured Articles</a>'
+      menu3[4]='<a href="stkdispcontent_clm_13.html" class="whitelinks">Glossary</a>'
+      menu3[5]='<a href="stkdispcontent_clm_27.html" class="whitelinks">FAQs</a>'
+      var menuwidth='200px' //default menu width
+      var menubgcolor='#009900'  //menu bgcolor
+      var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+      var hidemenu_onclick="yes" //hide menu when user clicks within menu?
+      /////No further editting needed
+      var ie4=document.all
+      var ns6=document.getElementById&&!document.all
+    if (ie4||ns6)
+    document.write('<div id="dropmenudiv" style="visibility:hidden;width:'+menuwidth+';background-color:'+menubgcolor+'" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+    function getposOffset(what, offsettype){
+    var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+    var parentEl=what.offsetParent;
+    while (parentEl!=null){
+    totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+    parentEl=parentEl.offsetParent;
+    }
+    return totaloffset;
+    }
+    function showhide(obj, e, visible, hidden, menuwidth){
+    if (ie4||ns6)
+    dropmenuobj.style.left=dropmenuobj.style.top="-500px"
+    if (menuwidth!=""){
+    dropmenuobj.widthobj=dropmenuobj.style
+    dropmenuobj.widthobj.width=menuwidth
+    }
+    if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+    obj.visibility=visible
+    else if (e.type=="click")
+    obj.visibility=hidden
+    }
+    function iecompattest(){
+    return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+    }
+    function clearbrowseredge(obj, whichedge){
+    var edgeoffset=0
+    if (whichedge=="rightedge"){
+    var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+    dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+    if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+    edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+    }
+    else{
+    var topedge=ie4 && !window.opera? iecompattest().scrollTop : window.pageYOffset
+    var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+    dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+    if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure){ //move up?
+    edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+    if ((dropmenuobj.y-topedge)<dropmenuobj.contentmeasure) //up no good either?
+    edgeoffset=dropmenuobj.y+obj.offsetHeight-topedge
+    }
+    }
+    return edgeoffset
+    }
+    function populatemenu(what){
+    if (ie4||ns6)
+    dropmenuobj.innerHTML=what.join("")
+    }
+    function dropdownmenu(obj, e, menucontents, menuwidth){
+    if (window.event) event.cancelBubble=true
+    else if (e.stopPropagation) e.stopPropagation()
+    clearhidemenu()
+    dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+    populatemenu(menucontents)
+    if (ie4||ns6){
+    showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+    dropmenuobj.x=getposOffset(obj, "left")
+    dropmenuobj.y=getposOffset(obj, "top")
+    dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+    dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+    }
+    return clickreturnvalue()
+    }
+    function clickreturnvalue(){
+    if (ie4||ns6) return false
+    else return true
+    }
+    function contains_ns6(a, b) {
+    while (b.parentNode)
+    if ((b = b.parentNode) == a)
+    return true;
+    return false;
+    }
+    function dynamichide(e){
+    if (ie4&&!dropmenuobj.contains(e.toElement))
+    delayhidemenu()
+    else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+    delayhidemenu()
+    }
+    function hidemenu(e){
+    if (typeof dropmenuobj!="undefined"){
+    if (ie4||ns6)
+    dropmenuobj.style.visibility="hidden"
+    }
+    }
+    function delayhidemenu(){
+    if (ie4||ns6)
+    delayhide=setTimeout("hidemenu()",disappeardelay)
+    }
+    function clearhidemenu(){
+    if (typeof delayhide!="undefined")
+    clearTimeout(delayhide)
+    }
+    if (hidemenu_onclick=="yes")
+    document.onclick=hidemenu
+    </script><script type="text/javascript" defer="" src="http://engine5.woopra.com/visit/ra=NGRTPFYXIUZZ37X5UMWECC47THBUKP3M&amp;sessioncookie=Z8MEGKRD35QBT25ERJMDU0QB9FR18OUL
+&amp;cookie=XN7F9YWRGDLAXEXOCDJDPUCM4CZXRZ5W
+&amp;browsertoken=U
+&amp;platformtoken=Win32
+&amp;language=en-US
+&amp;pagetitle=stockskenya.com%20%3A%3A%20information%20and%20analysis%20on%20kenya's%20stock%20market%2C%20the%20Nairobi%20Stock%20Exchange%20(NSE)
+&amp;referer=
+&amp;screen=1280x800
+&amp;localtime=11%3A34
+"></script></head><body class="bodytext" bgcolor="#ffffff" background="http://www.stockskenya.com/image_bank/greengradient1.jpg" style="background-repeat:repeat-x"><div id="dropmenudiv" style="visibility:hidden;width:200px;background-color:#009900" onmouseover="clearhidemenu()" onmouseout="dynamichide(event)"></div>
+<script async="" src="//static.getclicky.com/101361987.js"></script>
+
+<div id="bubble_tooltip_r">
+    <div class="bubble_top"><span></span></div>
+    <div class="bubble_middle" align="left"><span id="bubble_tooltip_content_r">stockskenya.com :: your online investment channel.</span></div>
+    <div class="bubble_bottom"></div>
+</div>
+<div id="bubble_tooltip">
+    <div class="bubble_top"><span></span></div>
+    <div class="bubble_middle" align="left"><span id="bubble_tooltip_content">stockskenya.com :: your online investment channel.</span></div>
+    <div class="bubble_bottom"></div>
+</div>
+<div id="bubble_tooltip_b">
+    <div class="bubble_top"><span></span></div>
+    <div class="bubble_middle" align="left"><span id="bubble_tooltip_content_b">stockskenya.com :: your online investment channel.</span></div>
+    <div class="bubble_bottom"></div>
+</div>
+<table width="780" border="1" style="border-collapse:collapse" bgcolor="#ffffff" bordercolor="#cccccc" align="center" cellpadding="3" cellspacing="0">
+    <tbody><tr>
+        <td style="width: 795px">
+            <table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody><tr>
+                    <td width="29%" valign="top"><img src="image_bank/logo1.jpg" alt="stockskenya.com" width="170" height="97"></td>
+                    <td width="18%" valign="top">&nbsp;</td>
+                    <td width="53%" valign="top"><table width="100%" border="0" align="left" cellpadding="2" cellspacing="0">
+                      <tbody><tr>
+                        <td align="right">
+                            <a href="default.html" class="blacklinks">Home</a> | <a class="blacklinks" href="stkdispcontent_clm_11.html">About us</a> | <a class="blacklinks" href="contactus.html">Contact us</a> | <a class="blacklinks" href="stkrefer.html">Recommend this site</a> | <a class="blacklinks" href="stkwishlist.html">Suggestion Box</a>
+                            </td>
+                      </tr>
+                      <tr>
+                        <td align="right">
+                        &nbsp;
+                        </td>
+                      </tr>
+                      </tbody></table></td>
+                  </tr>
+                </tbody></table>
+				</td></tr></tbody></table>
+<form name="aspnetForm" method="post" action="default.html" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUENTM4MQ9kFgJmD2QWAgIDD2QWDAIDDw8WAh4EVGV4dAUJT2N0b2JlciA3ZGQCBQ8WAh4HVmlzaWJsZWhkAgkPFgIfAAWyHzx0YWJsZSB3aWR0aD0nMTAwJScgYm9yZGVyPScwJyBjZWxscGFkZGluZz0nMycgY2VsbHNwYWNpbmc9JzAnIGNsYXNzPSdib2R5dGV4dCc+PHRyPjx0ZCBjb2xzcGFuPSczJz48Yj5JbnZlc3RtZW50czwvYj48L3RkPjwvdHI+PHRyPjx0ZCB3aWR0aD0nMiUnIHZhbGlnbj0ndG9wJz48c3BhbiBjbGFzcz0nYmFzZWxpbmUnPjxpbWcgc3JjPSdpbWFnZV9iYW5rL2dyZXlidWxsZXQuanBnJyB3aWR0aD0nNycgaGVpZ2h0PSc3JyAvPjwvc3Bhbj48L3RkPjx0ZCB3aWR0aD0nNjglJyB2YWxpZ249J3RvcCc+PGEgdGFyZ2V0PSdfdG9wJyBjbGFzcz0nbGlua3MnIGhyZWY9J3N0a0ZvcnVtVG9waWMuYXNweD9zdGs9MCZ0b3A9OTc3OSc+c3VmZmNvbiBAIDQuNTANCjwvYT48L3RkPjx0ZCB3aWR0aD0nNSUnIHZhbGlnbj0ndG9wJz5bOV08L2I+PC90ZD48L3RyPjx0cj48dGQgd2lkdGg9JzIlJyB2YWxpZ249J3RvcCc+PHNwYW4gY2xhc3M9J2Jhc2VsaW5lJz48aW1nIHNyYz0naW1hZ2VfYmFuay9ncmV5YnVsbGV0LmpwZycgd2lkdGg9JzcnIGhlaWdodD0nNycgLz48L3NwYW4+PC90ZD48dGQgd2lkdGg9JzY4JScgdmFsaWduPSd0b3AnPjxhIHRhcmdldD0nX3RvcCcgY2xhc3M9J2xpbmtzJyBocmVmPSdzdGtGb3J1bVRvcGljLmFzcHg/c3RrPTAmdG9wPTkyMzknPmNvb3AgaXBvIHByaWNlLTQgLz0/DQo8L2E+PC90ZD48dGQgd2lkdGg9JzUlJyB2YWxpZ249J3RvcCc+WzMzXTwvYj48L3RkPjwvdHI+PHRyPjx0ZCB3aWR0aD0nMiUnIHZhbGlnbj0ndG9wJz48c3BhbiBjbGFzcz0nYmFzZWxpbmUnPjxpbWcgc3JjPSdpbWFnZV9iYW5rL2dyZXlidWxsZXQuanBnJyB3aWR0aD0nNycgaGVpZ2h0PSc3JyAvPjwvc3Bhbj48L3RkPjx0ZCB3aWR0aD0nNjglJyB2YWxpZ249J3RvcCc+PGEgdGFyZ2V0PSdfdG9wJyBjbGFzcz0nbGlua3MnIGhyZWY9J3N0a0ZvcnVtVG9waWMuYXNweD9zdGs9MCZ0b3A9OTAzOSc+bnNlIGJlbG93IDQwMDAgYnkgZGVjID8NCjwvYT48L3RkPjx0ZCB3aWR0aD0nNSUnIHZhbGlnbj0ndG9wJz5bNjVdPC9iPjwvdGQ+PC90cj48dHI+PHRkIHdpZHRoPScyJScgdmFsaWduPSd0b3AnPjxzcGFuIGNsYXNzPSdiYXNlbGluZSc+PGltZyBzcmM9J2ltYWdlX2JhbmsvZ3JleWJ1bGxldC5qcGcnIHdpZHRoPSc3JyBoZWlnaHQ9JzcnIC8+PC9zcGFuPjwvdGQ+PHRkIHdpZHRoPSc2OCUnIHZhbGlnbj0ndG9wJz48YSB0YXJnZXQ9J190b3AnIGNsYXNzPSdsaW5rcycgaHJlZj0nc3RrRm9ydW1Ub3BpYy5hc3B4P3N0az0wJnRvcD05NzU1Jz5hZHZpc2Ugb24gd2hhdCB0byBidXkNCjwvYT48L3RkPjx0ZCB3aWR0aD0nNSUnIHZhbGlnbj0ndG9wJz5bNl08L2I+PC90ZD48L3RyPjx0cj48dGQgd2lkdGg9JzIlJyB2YWxpZ249J3RvcCc+PHNwYW4gY2xhc3M9J2Jhc2VsaW5lJz48aW1nIHNyYz0naW1hZ2VfYmFuay9ncmV5YnVsbGV0LmpwZycgd2lkdGg9JzcnIGhlaWdodD0nNycgLz48L3NwYW4+PC90ZD48dGQgd2lkdGg9JzY4JScgdmFsaWduPSd0b3AnPjxhIHRhcmdldD0nX3RvcCcgY2xhc3M9J2xpbmtzJyBocmVmPSdzdGtGb3J1bVRvcGljLmFzcHg/c3RrPTAmdG9wPTk2ODUnPmJ1eSBub3cNCjwvYT48L3RkPjx0ZCB3aWR0aD0nNSUnIHZhbGlnbj0ndG9wJz5bNV08L2I+PC90ZD48L3RyPjx0cj48dGQgd2lkdGg9JzIlJyB2YWxpZ249J3RvcCc+PHNwYW4gY2xhc3M9J2Jhc2VsaW5lJz48aW1nIHNyYz0naW1hZ2VfYmFuay9ncmV5YnVsbGV0LmpwZycgd2lkdGg9JzcnIGhlaWdodD0nNycgLz48L3NwYW4+PC90ZD48dGQgd2lkdGg9JzY4JScgdmFsaWduPSd0b3AnPjxhIHRhcmdldD0nX3RvcCcgY2xhc3M9J2xpbmtzJyBocmVmPSdzdGtGb3J1bVRvcGljLmFzcHg/c3RrPTAmdG9wPTk3MjcnPndoeSBpcyBtaWNoYWVsIGpvc2VwaCB3YXRjaGluZyBzYWZhcmljb20gY3J1bWJsZQ0KPC9hPjwvdGQ+PHRkIHdpZHRoPSc1JScgdmFsaWduPSd0b3AnPlszN108L2I+PC90ZD48L3RyPjx0cj48dGQgd2lkdGg9JzIlJyB2YWxpZ249J3RvcCc+PHNwYW4gY2xhc3M9J2Jhc2VsaW5lJz48aW1nIHNyYz0naW1hZ2VfYmFuay9ncmV5YnVsbGV0LmpwZycgd2lkdGg9JzcnIGhlaWdodD0nNycgLz48L3NwYW4+PC90ZD48dGQgd2lkdGg9JzY4JScgdmFsaWduPSd0b3AnPjxhIHRhcmdldD0nX3RvcCcgY2xhc3M9J2xpbmtzJyBocmVmPSdzdGtGb3J1bVRvcGljLmFzcHg/c3RrPTAmdG9wPTk3OTEnPm5zZSBiZWxvdyA0MDAwDQo8L2E+PC90ZD48dGQgd2lkdGg9JzUlJyB2YWxpZ249J3RvcCc+WzFdPC9iPjwvdGQ+PC90cj48dHI+PHRkIHdpZHRoPScyJScgdmFsaWduPSd0b3AnPjxzcGFuIGNsYXNzPSdiYXNlbGluZSc+PGltZyBzcmM9J2ltYWdlX2JhbmsvZ3JleWJ1bGxldC5qcGcnIHdpZHRoPSc3JyBoZWlnaHQ9JzcnIC8+PC9zcGFuPjwvdGQ+PHRkIHdpZHRoPSc2OCUnIHZhbGlnbj0ndG9wJz48YSB0YXJnZXQ9J190b3AnIGNsYXNzPSdsaW5rcycgaHJlZj0nc3RrRm9ydW1Ub3BpYy5hc3B4P3N0az0wJnRvcD05Nzg4Jz5udmwgeWFhbmkgaXRzIHRyYWRpbmcgYXQgbnNlPw0KPC9hPjwvdGQ+PHRkIHdpZHRoPSc1JScgdmFsaWduPSd0b3AnPlszXTwvYj48L3RkPjwvdHI+PHRyPjx0ZCBjb2xzcGFuPSczJyBoZWlnaHQ9JzEnIGJnY29sb3I9JyNjY2NjY2MnPjwvdGQ+PC90cj48dHI+PHRkIGNvbHNwYW49JzMnPjxiPk90aGVyIERpc2N1c3Npb25zPC9iPjwvdGQ+PC90cj48dHI+PHRkIHdpZHRoPScyJScgdmFsaWduPSd0b3AnPjxzcGFuIGNsYXNzPSdiYXNlbGluZSc+PGltZyBzcmM9J2ltYWdlX2JhbmsvZ3JleWJ1bGxldC5qcGcnIHdpZHRoPSc3JyBoZWlnaHQ9JzcnIC8+PC9zcGFuPjwvdGQ+PHRkIHdpZHRoPSc2OCUnIHZhbGlnbj0ndG9wJz48YSB0YXJnZXQ9J190b3AnIGNsYXNzPSdsaW5rcycgaHJlZj0nc3RrRm9ydW1Ub3BpYy5hc3B4P3N0az0xMDAyJnRvcD05NzkwJz5leGFtIHF1ZXN0aW9ucw0KPC9hPjwvdGQ+PHRkIHdpZHRoPSc1JScgdmFsaWduPSd0b3AnPls0XTwvdGQ+PC90cj48dHI+PHRkIHdpZHRoPScyJScgdmFsaWduPSd0b3AnPjxzcGFuIGNsYXNzPSdiYXNlbGluZSc+PGltZyBzcmM9J2ltYWdlX2JhbmsvZ3JleWJ1bGxldC5qcGcnIHdpZHRoPSc3JyBoZWlnaHQ9JzcnIC8+PC9zcGFuPjwvdGQ+PHRkIHdpZHRoPSc2OCUnIHZhbGlnbj0ndG9wJz48YSB0YXJnZXQ9J190b3AnIGNsYXNzPSdsaW5rcycgaHJlZj0nc3RrRm9ydW1Ub3BpYy5hc3B4P3N0az0xMDAyJnRvcD05Nzc1Jz5raW11bnlhIGlzIGNvbWluZyBiYWNrDQo8L2E+PC90ZD48dGQgd2lkdGg9JzUlJyB2YWxpZ249J3RvcCc+WzIwXTwvdGQ+PC90cj48dHI+PHRkIHdpZHRoPScyJScgdmFsaWduPSd0b3AnPjxzcGFuIGNsYXNzPSdiYXNlbGluZSc+PGltZyBzcmM9J2ltYWdlX2JhbmsvZ3JleWJ1bGxldC5qcGcnIHdpZHRoPSc3JyBoZWlnaHQ9JzcnIC8+PC9zcGFuPjwvdGQ+PHRkIHdpZHRoPSc2OCUnIHZhbGlnbj0ndG9wJz48YSB0YXJnZXQ9J190b3AnIGNsYXNzPSdsaW5rcycgaHJlZj0nc3RrRm9ydW1Ub3BpYy5hc3B4P3N0az0xMDAyJnRvcD05NzgxJz5zayBtZW1iZXJzIGNsaWNrIGhlcmUNCjwvYT48L3RkPjx0ZCB3aWR0aD0nNSUnIHZhbGlnbj0ndG9wJz5bOV08L3RkPjwvdHI+PHRyPjx0ZCB3aWR0aD0nMiUnIHZhbGlnbj0ndG9wJz48c3BhbiBjbGFzcz0nYmFzZWxpbmUnPjxpbWcgc3JjPSdpbWFnZV9iYW5rL2dyZXlidWxsZXQuanBnJyB3aWR0aD0nNycgaGVpZ2h0PSc3JyAvPjwvc3Bhbj48L3RkPjx0ZCB3aWR0aD0nNjglJyB2YWxpZ249J3RvcCc+PGEgdGFyZ2V0PSdfdG9wJyBjbGFzcz0nbGlua3MnIGhyZWY9J3N0a0ZvcnVtVG9waWMuYXNweD9zdGs9MTAwMiZ0b3A9OTc4NSc+d2hvIGxlYWtlZCBpbmZvPw0KPC9hPjwvdGQ+PHRkIHdpZHRoPSc1JScgdmFsaWduPSd0b3AnPls0XTwvdGQ+PC90cj48L3RhYmxlPg0KPHNjcmlwdCB0eXBlPSJ0ZXh0L0phdmFTY3JpcHQiIGxhbmd1YWdlPSJqYXZhc2NyaXB0Ij4NCiAgdmFyIGQ9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInRyc3RrMCIpOw0KPC9zY3JpcHQ+DQpkAgoPDxYCHwAF5gI8dGFibGUgd2lkdGg9JzEwMCUnIGNlbGxwYWRkaW5nPScyJyBib3JkZXI9JzAnPjxhIGNsYXNzPSdsaW5rcycgaHJlZj0nc3RrZGlzcGNvbnRlbnQuYXNweD9haWQ9Mzg4Jz58IEhvdyB0byBpbnZlc3QgaW4gdGhlIE5TRTwvYT48YnIgLz48dHI+PHRkPlRoZSBtaW51dGVzIGZvciBtZSBtZWV0aW5nIG9mIHRoZSBTSyAoRXNrYXkpIEludmVzdG1lbnQgQ2x1YiBoZWxkIG9uIEFwcmlsIDEgMjAwOCBjYW4gYmUgPGEgaHJlZj0iaHR0cDovL3d3dy5zdG9ja3NrZW55YS5jb20vbmV3c2l0ZS9wYXJ0bmVycy9Fc2theV9NaW51dGVzLnBkZiIgdGFyZ2V0PSJfYmxhbmsiPmRvd25sb2FkZWQgaGVyZTwvYT4uPC90ZD48L3RyPjwvdGFibGU+ZGQCCw8WAh8ABcANPHRyPjx0ZCB3aWR0aD0nMyUnIGFsaWduPSdsZWZ0JyB2YWxpZ249J3RvcCcgY2xhc3M9J2Jhc2VsaW5lJz48aW1nIHNyYz0naW1hZ2VfYmFuay9ncmV5YnVsbGV0LmpwZycgd2lkdGg9JzcnIGhlaWdodD0nNycgLz48L3RkPjx0ZCB3aWR0aD0nOTclJyB2YWxpZ249J3RvcCcgY2xhc3M9J2Jhc2VsaW5lJz48YSBocmVmPSdzdGtkaXNwY29udGVudC5hc3B4P2FpZD02OTgnIGNsYXNzPSdsaW5rcyc+RmluYW5jaWVycyBub3cgc2hpZnQgYXR0ZW50aW9uIHRvIHdvbWVuIGVudGVycHJpc2VzICA8L2E+PC90ZD48L3RyPg0KPHRyPjx0ZCB3aWR0aD0nMyUnIGFsaWduPSdsZWZ0JyB2YWxpZ249J3RvcCcgY2xhc3M9J2Jhc2VsaW5lJz48aW1nIHNyYz0naW1hZ2VfYmFuay9ncmV5YnVsbGV0LmpwZycgd2lkdGg9JzcnIGhlaWdodD0nNycgLz48L3RkPjx0ZCB3aWR0aD0nOTclJyB2YWxpZ249J3RvcCcgY2xhc3M9J2Jhc2VsaW5lJz48YSBocmVmPSdzdGtkaXNwY29udGVudC5hc3B4P2FpZD02OTcnIGNsYXNzPSdsaW5rcyc+T2xkIE11dHVhbCBzaWducyB1bml0IHRydXN0cyBkZWFsIHdpdGggUG9zdGFwYXk8L2E+PC90ZD48L3RyPg0KPHRyPjx0ZCB3aWR0aD0nMyUnIGFsaWduPSdsZWZ0JyB2YWxpZ249J3RvcCcgY2xhc3M9J2Jhc2VsaW5lJz48aW1nIHNyYz0naW1hZ2VfYmFuay9ncmV5YnVsbGV0LmpwZycgd2lkdGg9JzcnIGhlaWdodD0nNycgLz48L3RkPjx0ZCB3aWR0aD0nOTclJyB2YWxpZ249J3RvcCcgY2xhc3M9J2Jhc2VsaW5lJz48YSBocmVmPSdzdGtkaXNwY29udGVudC5hc3B4P2FpZD02OTYnIGNsYXNzPSdsaW5rcyc+U291dGggQWZyaWNhbiBmaXJtIGJ1eXMgbWFpbiBzdGFrZSBpbiBIYWNvPC9hPjwvdGQ+PC90cj4NCjx0cj48dGQgd2lkdGg9JzMlJyBhbGlnbj0nbGVmdCcgdmFsaWduPSd0b3AnIGNsYXNzPSdiYXNlbGluZSc+PGltZyBzcmM9J2ltYWdlX2JhbmsvZ3JleWJ1bGxldC5qcGcnIHdpZHRoPSc3JyBoZWlnaHQ9JzcnIC8+PC90ZD48dGQgd2lkdGg9Jzk3JScgdmFsaWduPSd0b3AnIGNsYXNzPSdiYXNlbGluZSc+PGEgaHJlZj0nc3RrZGlzcGNvbnRlbnQuYXNweD9haWQ9Njk1JyBjbGFzcz0nbGlua3MnPk93bmVyc2hpcCBydWxlIGJsb2NrcyBpbnZlc3RtZW50IGluIHRlbGVjb21zPC9hPjwvdGQ+PC90cj4NCjx0cj48dGQgd2lkdGg9JzMlJyBhbGlnbj0nbGVmdCcgdmFsaWduPSd0b3AnIGNsYXNzPSdiYXNlbGluZSc+PGltZyBzcmM9J2ltYWdlX2JhbmsvZ3JleWJ1bGxldC5qcGcnIHdpZHRoPSc3JyBoZWlnaHQ9JzcnIC8+PC90ZD48dGQgd2lkdGg9Jzk3JScgdmFsaWduPSd0b3AnIGNsYXNzPSdiYXNlbGluZSc+PGEgaHJlZj0nc3RrZGlzcGNvbnRlbnQuYXNweD9haWQ9Njk0JyBjbGFzcz0nbGlua3MnPkNCS+KAmXMgbHVjayBjaGFuZ2VzIHdpdGggMTEgcGVyIGNlbnQganVtcCBpbiBwcm9maXQ8L2E+PC90ZD48L3RyPg0KPHRyPjx0ZCB3aWR0aD0nMyUnIGFsaWduPSdsZWZ0JyB2YWxpZ249J3RvcCcgY2xhc3M9J2Jhc2VsaW5lJz48aW1nIHNyYz0naW1hZ2VfYmFuay9ncmV5YnVsbGV0LmpwZycgd2lkdGg9JzcnIGhlaWdodD0nNycgLz48L3RkPjx0ZCB3aWR0aD0nOTclJyB2YWxpZ249J3RvcCcgY2xhc3M9J2Jhc2VsaW5lJz48YSBocmVmPSdzdGtkaXNwY29udGVudC5hc3B4P2FpZD02OTMnIGNsYXNzPSdsaW5rcyc+TWlkLXRpZXIgZmlybXMgY2FsbCBmb3IgbW9yZSBsaWNlbmNlIHJlZm9ybXM8L2E+PC90ZD48L3RyPg0KZAIMDxYCHwAFmQk8dGFibGUgd2lkdGg9JzEwMCUnIGJvcmRlcj0nMCcgY2VsbHNwYWNpbmc9JzAnIGNlbGxwYWRkaW5nPScyJz48dHI+PHRkIGFsaWduPSdsZWZ0JyB2YWxpZ249J3RvcCcgY2xhc3M9J3NtYWxsZm9udHMnPjxzdHJvbmc+Q3VycmVuY3k8L3N0cm9uZz48L3RkPjx0ZCBhbGlnbj0ncmlnaHQnIHZhbGlnbj0ndG9wJyBjbGFzcz0nc21hbGxmb250cyc+PHN0cm9uZz5SYXRlPC9zdHJvbmc+PC90ZD48L3RyPg0KPHRyIG9ubW91c2VvdmVyPSJzaG93VG9vbFRpcF9iKGV2ZW50LCc8Yj48Yj5VUyBEb2xsYXI8L2I+PGJyPkN1cnIgUmF0ZTogNzMuNjc8YnI+UHJldiBSYXRlOiA3Mi45MScpO3JldHVybiBmYWxzZSIgb25tb3VzZW91dD0naGlkZVRvb2xUaXBfYigpJz4gICAgPHRkIGFsaWduPSdsZWZ0JyB2YWxpZ249J3RvcCcgY2xhc3M9J3NtYWxsZm9udHMnPlVTIERvbGxhcjwvdGQ+ICAgIDx0ZCBhbGlnbj0ncmlnaHQnIHZhbGlnbj0ndG9wJyBjbGFzcz0nc21hbGxmb250cyc+IDxpbWcgc3JjPSdpbWFnZV9iYW5rL2dyZWVuLmdpZic+IDczLjY3PC90ZD4gIDwvdHI+PHRyIG9ubW91c2VvdmVyPSJzaG93VG9vbFRpcF9iKGV2ZW50LCc8Yj48Yj5TVEcgUG91bmQ8L2I+PGJyPkN1cnIgUmF0ZTogMTI5LjA4PGJyPlByZXYgUmF0ZTogMTI4LjI5Jyk7cmV0dXJuIGZhbHNlIiBvbm1vdXNlb3V0PSdoaWRlVG9vbFRpcF9iKCknPiAgICA8dGQgYWxpZ249J2xlZnQnIHZhbGlnbj0ndG9wJyBjbGFzcz0nc21hbGxmb250cyc+U1RHIFBvdW5kPC90ZD4gICAgPHRkIGFsaWduPSdyaWdodCcgdmFsaWduPSd0b3AnIGNsYXNzPSdzbWFsbGZvbnRzJz4gPGltZyBzcmM9J2ltYWdlX2JhbmsvZ3JlZW4uZ2lmJz4gMTI5LjA4PC90ZD4gIDwvdHI+PHRyIG9ubW91c2VvdmVyPSJzaG93VG9vbFRpcF9iKGV2ZW50LCc8Yj48Yj5FdXJvPC9iPjxicj5DdXJyIFJhdGU6IDEwMC4wNjxicj5QcmV2IFJhdGU6IDk5LjMxJyk7cmV0dXJuIGZhbHNlIiBvbm1vdXNlb3V0PSdoaWRlVG9vbFRpcF9iKCknPiAgICA8dGQgYWxpZ249J2xlZnQnIHZhbGlnbj0ndG9wJyBjbGFzcz0nc21hbGxmb250cyc+RXVybzwvdGQ+ICAgIDx0ZCBhbGlnbj0ncmlnaHQnIHZhbGlnbj0ndG9wJyBjbGFzcz0nc21hbGxmb250cyc+IDxpbWcgc3JjPSdpbWFnZV9iYW5rL2dyZWVuLmdpZic+IDEwMC4wNjwvdGQ+ICA8L3RyPjwvdGFibGU+ZGRQ+CCBGes1xzETEdo+7Pcip96HOg==">
+<table width="780" height="33" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td valign="top">
+            <iframe src="livescroller.html" width="100%" height="30" marginheight="0" marginwidth="0" frameborder="0" scrolling="no"></iframe>
+    </td>
+  </tr>
+</tbody></table>
+<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td><table width="100%" border="0" cellpadding="8" cellspacing="0">
+      <tbody><tr>
+        <td width="65%" align="left" valign="top" background="image_bank/greengradient.jpg" class="linkstop">
+            <table width="100%" border="0" cellpadding="2" cellspacing="0" bordercolor="#000066" style="border-collapse: collapse">
+                <tbody><tr>
+                  <td width="23%"><strong><a href="default.html" class="whitelinks">Home</a></strong></td>
+                  <td width="2%" class="whitelinks">|</td>
+                  <td width="23%" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, menu1, '200px')" onmouseout="delayhidemenu()"><strong><a href="#" class="whitelinks">Analysis</a></strong></td>
+                  <td width="2%" class="whitelinks">|</td>
+                  <td width="23%" class="whitelinks" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, menu2, '200px')" onmouseout="delayhidemenu()"><a href="#" class="whitelinks"><strong>Resources</strong></a></td>
+                  <td width="2%" class="whitelinks">|</td>
+                  <td width="23%" class="whitelinks" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, menu3, '170px')" onmouseout="delayhidemenu()"><a href="#" class="whitelinks"><strong>Content</strong></a></td>
+                </tr>
+              </tbody></table>
+        </td>
+        <td width="35%" align="left" valign="top" class="blackbackground"> <div align="right"><strong><a href="stklogin.html" class="whitelinks"><b>Login</b></a> | <a href="stkregister.html" class="whitelinks">New User</a> | <a href="stkdispcontent_clm_17.html" class="whitelinks">Why Register?</a></strong></div></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#cccccc">
+    </td>
+  </tr>  
+</tbody></table>
+<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td valign="top" style="width: 210px; border-right: #eeeeee 1px solid; height: 519px;">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody><tr>
+                <td valign="top">
+                    <iframe width="100%" frameborder="0" marginheight="0" marginwidth="0" height="210" src="livefeed.html" scrolling="no"></iframe>
+                    <span style="color: #333333; font-family: Verdana"><strong></strong></span>
+                    <table border="0" cellpadding="0" cellspacing="0" style="font-weight: bold; color: #333333;
+                        font-family: Verdana" width="100%">
+                        <tbody><tr>
+                            <td height="20">
+                                <a class="linksbold" href="stkperformance.html">More Performance <span style="font-family: Tahoma">
+                                    <span style="color: #000000">Statistics...</span></span></a></td>
+                        </tr>
+                        <tr style="font-family: Tahoma">
+                            <td height="20">
+                                <a class="linksbold" href="stockprofiler.html">Latest Prices (<span id="ctl00_lblLatestDate">October 7</span>)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#ffffff" align="center">
+                            </td>
+                        </tr>
+                        </tbody></table>
+                    <!--#Google Referrals-->
+                    <table style="width: 100%">
+                        <tbody><tr id="ctl00_trAdwordsRefer">
+	<td>
+                            </td>
+</tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+      <table border="0" cellpadding="2" cellspacing="0" bgcolor="#ffffff" width="100%">
+         <tbody><tr>
+            <td align="left" style="border-top: #eeeeee 1px solid">
+                &nbsp;</td>
+         </tr> 
+      </tbody></table>
+    </td>
+    <td valign="top">
+      <table width="100%" border="0" cellpadding="5" cellspacing="0">
+      <tbody><tr>
+          <td style="width: 50%">
+		  <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+              <tbody><tr>
+                  <td class="titlegrey">
+                      Discussion Forum</td>
+                    <td style="text-align: right">
+                        <img src="image_bank/forum.jpg"></td>
+                </tr>
+            </tbody></table>        
+          </td>
+          <td style="padding-right: 1px; padding-left: 1px; padding-bottom: 1px; padding-top: 1px" align="right">
+              <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                  <tbody><tr>                
+                    <td style="height: 19px" align="right">
+                        &nbsp;&nbsp;
+                    </td>
+                  </tr>
+              </tbody></table>
+              <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                  <tbody><tr>
+                      <td style="height: 19px" align="right">
+                          <input name="ctl00$txtSearch" type="text" value="Enter your search terms..." size="25" id="ctl00_txtSearch" class="textbox">
+                          &nbsp;<input type="submit" name="ctl00$btnSearch" value="search >>" id="ctl00_btnSearch" class="button2">
+                    </td>
+                </tr>
+              </tbody></table>
+              </td>
+			  </tr>
+      <tr>
+         <td bgcolor="#dcdcdc">
+             <strong><span style="color: #666666"><a target="_top" href="stkForums_upd_stk_0.html">
+                 <strong>Post new topic</strong></a> | <a target="_top" href="stkForums_clm_14.html">
+                <strong>More discussions</strong></a><a href="stkForums_upd_stk_0.html" target="_top"></a></span></strong></td>  
+          <td bgcolor="#dcdcdc" align="right">
+              <strong><span style="color: #666666">
+				              <select name="lstStockJump" class="formstocks" onchange="location='stkprofiler.aspx?stkId=' + this.options[this.selectedIndex].value;" style="width: 100%">
+    				                <option selected="selected" value="0">Select stock to jump to:</option>
+				                    <option value="54">AccessKenya Group</option>
+				                    <option value="40">A.Baumann &amp; Co.</option>
+				                    <option value="24">Athi River Mining</option>
+				                    <option value="25">B.O.C Kenya</option>
+				                    <option value="26">Bamburi Cement</option>
+				                    <option value="13">Barclays Bank</option>
+				                    <option value="27">British American Tobacco Kenya</option>
+				                    <option value="14">C.F.C Stanbic Bank</option>
+				                    <option value="5">Car &amp; General (K)</option>
+				                    <option value="28">Carbacid Investments</option>
+				                    <option value="41">City Trust</option>
+				                    <option value="6">CMC Holdings</option>
+				                    <option value="29">Crown Berger</option>
+				                    <option value="15">Diamond Trust Bank Kenya</option>
+				                    <option value="31">E.A.Cables</option>
+				                    <option value="32">E.A.Portland Cement</option>
+				                    <option value="42">Eaagads</option>
+				                    <option value="33">East African Breweries</option>
+				                    <option value="43">Express</option>
+				                    <option value="51">Equity Bank</option>
+				                    <option value="53">Eveready East Africa</option>
+				                    <option value="16">Housing Finance Co</option>
+				                    <option value="7">Hutchings Biemer</option>
+				                    <option value="17">I.C.D.C Investments Co</option>
+				                    <option value="18">Jubilee Insurance Co.</option>
+				                    <option value="2">Kakuzi</option>
+				                    <option value="45">Kapchorua Tea Co.</option>
+				                    <option value="50">KenGen</option>
+				                    <option value="8">Kenya Airways</option>
+				                    <option value="19">Kenya Commercial Bank</option>
+				                    <option value="35">Kenya Oil Co</option>
+				                    <option value="46">Kenya Orchards</option>
+				                    <option value="37">Kenya Power &amp; Lighting</option>
+				                    <option value="65">Kenya Reinsurance Corp</option>
+				                    <option value="47">Limuru Tea Co.</option>
+				                    <option value="9">Marshalls (E.A.)</option>
+				                    <option value="36">Mumias Sugar Co.</option>
+				                    <option value="10">Nation Media Group</option>
+				                    <option value="20">National Bank of Kenya</option>
+				                    <option value="21">NIC Bank</option>
+				                    <option value="30">Olympia Capital Holdings</option>
+				                    <option value="22">Pan Africa Insurance Holdings</option>
+				                    <option value="3">Rea Vipingo Plantations</option>
+				                    <option value="34">Sameer Africa</option>
+				                    <option value="4">Sasini Tea &amp; Coffee</option>
+				                    <option value="52">ScanGroup</option>
+				                    <option value="23">Standard Chartered Bank</option>
+				                    <option value="48">Standard Group</option>
+				                    <option value="38">Total Kenya</option>
+				                    <option value="49">TPS Eastern Africa</option>
+				                    <option value="12">Uchumi Supermarket</option>
+				                    <option value="39">Unga Group</option>
+				                    <option value="1">Unilever Tea Kenya</option>
+				                    <option value="44">Williamson Tea Kenya</option>
+                                    <option value="55" style="background-color:#000000;">British American Tobacco - Uganda</option>
+                                    <option value="56" style="background-color:#000000;">Bank of Baroda - Uganda</option>
+                                    <option value="57" style="background-color:#000000;">Development Finance Company of Uganda</option>
+                                    <option value="58" style="background-color:#000000;">East African Breweries Ltd - Uganda Listing</option>
+                                    <option value="59" style="background-color:#000000;">Jubilee Holdings Limited - Uganda Listing</option>
+                                    <option value="60" style="background-color:#000000;">Kenya Airways Ltd - Uganda Listing</option>
+                                    <option value="61" style="background-color:#000000;">New Vision Printing and Publishing Company Ltd</option>
+                                    <option value="62" style="background-color:#000000;">Stanbic Bank Uganda</option>
+                                    <option value="63" style="background-color:#000000;">Uganda Clays Limited</option>
+				                </select></span></strong></td>
+ 		</tr>   
+      <tr>
+          <td class="dicussionforum" valign="top" style="width: 50%"><table width="100%" border="0" cellpadding="3" cellspacing="0" class="bodytext"><tbody><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="stkForumTopic_stk_1002_top_9539.html">sk 2008 get- together
+</a></td><td width="5%" valign="top">[94]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="stkForumTopic_stk_1005_top_9711.html">stocks kenya awards
+</a></td><td width="5%" valign="top">[15]</td></tr><tr><td colspan="3" height="1" bgcolor="#cccccc"></td></tr><tr><td colspan="3"><b>Biz Ideas</b></td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="/">what would you advice
+</a></td><td width="5%" valign="top">[4]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="stkForumTopic_stk_1004_top_9734.html">magazine
+</a></td><td width="5%" valign="top">[6]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="stkForumTopic_stk_1004_top_9669.html">internet service provider
+</a></td><td width="5%" valign="top">[5]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="stkForumTopic_stk_1004_top_9637.html">zero grazing
+</a></td><td width="5%" valign="top">[16]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="stkForumTopic_stk_1004_top_9493.html">kshs 88,000
+</a></td><td width="5%" valign="top">[28]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="/">cross border trade
+</a></td><td width="5%" valign="top">[11]</td></tr><tr><td colspan="3" height="1" bgcolor="#cccccc"></td></tr><tr><td colspan="3"><b>Pennywise</b></td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="/">compost manure
+</a></td><td width="5%" valign="top">[1]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="/">energy crisis
+</a></td><td width="5%" valign="top">[2]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="/">how many have migrated from suffering con to vuka tariff?
+</a></td><td width="5%" valign="top">[25]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="/">building materials,where is cheaper
+</a></td><td width="5%" valign="top">[3]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="/">success university
+</a></td><td width="5%" valign="top">[16]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="stkForumTopic_stk_1005_top_9756.html">no ledger fee
+</a></td><td width="5%" valign="top">[5]</td></tr></tbody></table>
+<script type="text/JavaScript" language="javascript">
+  var d=document.getElementById("trstk0");
+</script>
+          </td>
+            <td class="dicussionforum" style="width: 50%" valign="top">
+              <table width="100%" border="0" cellpadding="3" cellspacing="0" class="bodytext"><tbody><tr><td colspan="3"><b>Investments</b></td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="stkForumTopic_stk_0_top_9779.html">suffcon @ 4.50
+</a></td><td width="5%" valign="top">[9]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="/">coop ipo price-4 /=?
+</a></td><td width="5%" valign="top">[33]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="/">nse below 4000 by dec ?
+</a></td><td width="5%" valign="top">[65]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="stkForumTopic_stk_0_top_9755.html">advise on what to buy
+</a></td><td width="5%" valign="top">[6]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="/">buy now
+</a></td><td width="5%" valign="top">[5]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="/">why is michael joseph watching safaricom crumble
+</a></td><td width="5%" valign="top">[37]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="/">nse below 4000
+</a></td><td width="5%" valign="top">[1]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="/">nvl yaani its trading at nse?
+</a></td><td width="5%" valign="top">[3]</td></tr><tr><td colspan="3" height="1" bgcolor="#cccccc"></td></tr><tr><td colspan="3"><b>Other Discussions</b></td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="stkForumTopic_stk_1002_top_9790.html">exam questions
+</a></td><td width="5%" valign="top">[4]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="/">kimunya is coming back
+</a></td><td width="5%" valign="top">[20]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="/">sk members click here
+</a></td><td width="5%" valign="top">[9]</td></tr><tr><td width="2%" valign="top"><span class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></span></td><td width="68%" valign="top"><a target="_top" class="links" href="stkForumTopic_stk_1002_top_9785.html">who leaked info?
+</a></td><td width="5%" valign="top">[4]</td></tr></tbody></table>
+<script type="text/JavaScript" language="javascript">
+  var d=document.getElementById("trstk0");
+</script>
+         </td>
+      </tr>
+      <tr>
+          <td bgcolor="#cccccc" colspan="2" height="1">
+          </td>
+      </tr>
+        <tr>
+        <td align="left" bgcolor="#eeeeee" style="padding-right: 3px;" valign="middle">
+        <table border="0" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+            <td><img src="image_bank/RSS_icon_small.gif" alt="SK Discussion RSS" width="15" height="15"></td>
+            <td valign="top" align="right">&nbsp;<a href="/" target="_blank">SK Discussion Forum RSS Feed</a> | <a href="javascript:openwin('rssfeeds.html')">Learn more</a> </td>
+          </tr>
+        </tbody></table>
+          </td>
+          <td bgcolor="#EEEEEE" style="padding-right: 3px; height: 17px" align="right"><a target="_top" href="stkForums_upd_stk_0.html"><strong>Post new topic</strong></a> | <a target="_top" href="stkForums_clm_14.html">
+                <strong>More discussions</strong></a></td>
+      </tr>
+ </tbody></table>
+        <table width="100%">
+            <tbody><tr>
+                <td align="center" class="baseline" valign="baseline">
+                </td>
+            </tr>
+        </tbody></table>
+        <table width="100%" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+                <td valign="top">
+                    <table border="0" cellpadding="5" cellspacing="0" width="100%">
+                        <tbody><tr>
+                            <td align="left" class="baseline" colspan="2" valign="top">
+                                <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                                    <tbody><tr>
+                                        <td class="titlegrey">
+                                            Notice Board</td>
+                                        <td style="text-align: right">
+                                            <img src="image_bank/noticeboard.png"></td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" class="baseline" colspan="2" valign="top">
+                                <span id="ctl00_lblLatestUpdates"><a class="links" href="stkdispcontent_aid_388.html">| How to invest in the NSE</a><br><table width="100%" cellpadding="2" border="0"><tbody><tr><td>The minutes for me meeting of the SK (Eskay) Investment Club held on April 1 2008 can be <a href="newsite/partners/Eskay_Minutes.pdf" target="_blank">downloaded here</a>.</td></tr></tbody></table></span></td>
+                        </tr>
+                        </tbody></table>
+                    <table border="0" cellpadding="5" cellspacing="0" width="100%">
+                        <tbody><tr>
+                            <td align="left" class="baseline" colspan="2" valign="top">
+                                <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                                    <tbody><tr>
+                                        <td class="titlegrey">
+                                            News</td>
+                                        <td style="text-align: right">
+                                            <img src="image_bank/news.png"></td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                        <tr><td width="3%" align="left" valign="top" class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></td><td width="97%" valign="top" class="baseline"><a href="stkdispcontent_aid_698.html" class="links">Financiers now shift attention to women enterprises  </a></td></tr>
+<tr><td width="3%" align="left" valign="top" class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></td><td width="97%" valign="top" class="baseline"><a href="stkdispcontent_aid_697.html" class="links">Old Mutual signs unit trusts deal with Postapay</a></td></tr>
+
+<tr><td width="3%" align="left" valign="top" class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></td><td width="97%" valign="top" class="baseline">Trading CFDs, Stocks made easier with platforms like eToro. Check out the erfahrungen etoro guide for the positive feedback shared by users.
+Trading CFDs and stocks has&nbsp;been easier with platforms like eToro. Users' positive feedback can be found in the <a href="https://kryptoszene.de/broker/etoro-erfahrungen/" class="links"> erfahrungen etoro</a> guide.</td></tr>
+
+<tr><td width="3%" align="left" valign="top" class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></td><td width="97%" valign="top" class="baseline"><a href="stkdispcontent_aid_696.html" class="links">South African firm buys main stake in Haco</a></td></tr>
+<tr><td width="3%" align="left" valign="top" class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></td><td width="97%" valign="top" class="baseline"><a href="stkdispcontent_aid_695.html" class="links">Ownership rule blocks investment in telecoms</a></td></tr>
+<tr><td width="3%" align="left" valign="top" class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></td><td width="97%" valign="top" class="baseline"><a href="stkdispcontent_aid_694.html" class="links">CBK’s luck changes with 11 per cent jump in profit</a></td></tr>
+<tr><td width="3%" align="left" valign="top" class="baseline"><img src="image_bank/greybullet.jpg" width="7" height="7"></td><td width="97%" valign="top" class="baseline"><a href="stkdispcontent_aid_693.html" class="links">Mid-tier firms call for more licence reforms</a></td></tr>
+<tr>
+                            <td align="left" class="baseline" valign="top">&nbsp;
+                                </td>
+                            <td class="baseline" valign="top">
+                                <a href="stkdispcontent_clm_1.html"><strong>More News...</strong></a></td>
+                        </tr>
+                    </tbody></table>
+					Bitcoin investors firmly believe that cryptocurrency will gain value in the long run. Hence, if you think that the use of cryptocurrency will become increasingly widespread over time, it makes sense for you to buy Bitcoin. Because bitcoin is growing exponentially as the most valuable digital asset. In fact, about 0.1% of the wealth of UK households is in bitcoin and crypto-assets such as Ethereum and Binance coin.  You can also find the best crypto exchanges for <u><a href="https://www.analyticsinsight.net/how-to-buy-bitcoin-uk-2022/">buying bitcoin in the UK</a></u>. Based on various criteria, users can get to choose the right exchange that suits their needs.
+
+                    <table border="0" cellpadding="5" cellspacing="0" width="100%">
+                        <tbody><tr>
+                            <td>&nbsp;
+                                </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td style="width: 260px; height: 222px;" valign="top">
+      <table cellspacing="0">
+      <tbody><tr><td>
+          &nbsp;</td></tr>
+          <tr>
+              <td>
+                  <table cellpadding="0" cellspacing="0" width="100%">
+                      <tbody><tr>
+                          <td class="topcainers">
+                              &nbsp;Currencies</td>
+                      </tr>
+                      <tr>
+                          <td class="smallfonts">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="2"><tbody><tr><td align="left" valign="top" class="smallfonts"><strong>Currency</strong></td><td align="right" valign="top" class="smallfonts"><strong>Rate</strong></td></tr>
+<tr onmouseover="showToolTip_b(event,'<b><b>US Dollar</b><br>Curr Rate: 73.67<br>Prev Rate: 72.91');return false" onmouseout="hideToolTip_b()">    <td align="left" valign="top" class="smallfonts">US Dollar</td>    <td align="right" valign="top" class="smallfonts"> <img src="image_bank/green.gif"> 73.67</td>  </tr><tr onmouseover="showToolTip_b(event,'<b><b>STG Pound</b><br>Curr Rate: 129.08<br>Prev Rate: 128.29');return false" onmouseout="hideToolTip_b()">    <td align="left" valign="top" class="smallfonts">STG Pound</td>    <td align="right" valign="top" class="smallfonts"> <img src="image_bank/green.gif"> 129.08</td>  </tr><tr onmouseover="showToolTip_b(event,'<b><b>Euro</b><br>Curr Rate: 100.06<br>Prev Rate: 99.31');return false" onmouseout="hideToolTip_b()">    <td align="left" valign="top" class="smallfonts">Euro</td>    <td align="right" valign="top" class="smallfonts"> <img src="image_bank/green.gif"> 100.06</td>  </tr></tbody></table></td>
+                      </tr>
+                      <tr>
+                          <td><a class="linksbold" href="stkfinancialindicators.html">More Financial Indicators...</a><br><br></td>
+                      </tr>
+                      <tr>
+                          <td bgcolor="#eeeeee" class="smallfonts">
+                              <!--asp:Substitution ID="subPoll" runat1="Server" MethodName="GetPoll" /-->
+                          </td>
+                      </tr>
+                  </tbody></table>
+              </td>
+          </tr>
+    <tr><td>
+           
+                <script type="text/javascript"><!--
+                //2007-03-21: sk home
+                //-->
+                </script>       
+		</td></tr>
+    </tbody></table> 
+    </td>
+            </tr></tbody></table>   
+		</td>		
+	</tr>
+</tbody></table>
+    <table width="780" border="0" align="center" cellpadding="5" cellspacing="0">
+    <tbody><tr>
+        <td valign="top">
+        </td>
+    </tr>
+  <tr>
+    <td valign="top" background="image_bank/bg.jpg"><p>(c) 2007 stockskenya.com | <a href="stkdisclaimer.html">Disclaimer</a> | <a href="stkprivacy.html">Privacy Policy</a> | <a href="stkterms.html">Terms of Use</a>  | <a href="#" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('/');">Make this your homepage</a><br>
+      <br>
+      NOTE: Website best viewed with a resolution of at least 800*600 (using Internet Explorer 6.0 or later/ Mozilla Firefox)<br>
+    </p>
+      </td>
+  </tr>
+</tbody></table></form>
+</td>
+  </tr>
+</tbody></table>
+
+<script type="text/javascript">
+_uacct = "UA-796443-1";
+urchinTracker();
+</script>
+<script type="text/javascript">
+var woopra_id = '575886662';
+</script>
+<script src="js/woopra.js"></script>
+
+</body></html>
